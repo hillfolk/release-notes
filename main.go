@@ -1,15 +1,29 @@
 package main
 
 import (
-	"log"
 	"net/http"
 	"os"
 )
 
+func apiHandler(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("Hello, world!"))
+}
+
+func checkHandler(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("OK"))
+}
+
+func setupHandlers(mux *http.ServeMux) {
+	mux.HandleFunc("/api", apiHandler)
+	mux.HandleFunc("/check", checkHandler)
+}
+
 func main() {
 	listenAddr := os.Getenv("LISTEN_PORT")
 	if len(listenAddr) == 0 {
-		listenAddr = "8080"
+		listenAddr = ":8080"
 	}
-	log.Fatal(http.ListenAndServe(":"+listenAddr, nil))
+	mux := http.NewServeMux()
+	setupHandlers(mux)
+	http.ListenAndServe(listenAddr, mux)
 }
