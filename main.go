@@ -10,12 +10,12 @@ func apiHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func checkHandler(w http.ResponseWriter, r *http.Request) {
-	w.Write([]byte("OK"))
+	w.Write([]byte("ok"))
 }
 
 func setupHandlers(mux *http.ServeMux) {
 	mux.HandleFunc("/api", apiHandler)
-	mux.HandleFunc("/check", checkHandler)
+	mux.HandleFunc("/healthz", checkHandler)
 }
 
 func main() {
