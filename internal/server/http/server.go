@@ -3,7 +3,7 @@ package http
 import (
 	"net/http"
 
-	"release-notes/internal/handler"
+	"release-notes/internal/handlers"
 )
 
 func Run(port string) error {
@@ -17,6 +17,8 @@ func Run(port string) error {
 }
 
 func setupHandler(mux *http.ServeMux) {
-	mux.HandleFunc("/healthz", handler.HealthCheck)
-	mux.HandleFunc("/api", handler.Hello)
+
+	mux.HandleFunc("/healthz", handlers.HealthCheck)
+	mux.HandleFunc("/api", handlers.Hello)
+
 }

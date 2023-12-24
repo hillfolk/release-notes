@@ -1,4 +1,4 @@
-package handler
+package handlers
 
 import (
 	"fmt"
@@ -6,7 +6,7 @@ import (
 )
 
 func Hello(w http.ResponseWriter, req *http.Request) {
-	fmt.Print("Hello, world!")
+	fmt.Fprintf(w, "Hello, world")
 }
 
 func HealthCheck(w http.ResponseWriter, req *http.Request) {
