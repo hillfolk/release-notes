@@ -1,5 +1,6 @@
 # .github/release.yml
+changelog:
   categories:
-    - title: Changes
+    - title: 변경사항
       labels:
         - "*"
