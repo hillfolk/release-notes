@@ -1,21 +1,30 @@
 # .github/release.yml
 changelog:
   categories:
-    - title: 기능 추가 ✨
-      labels: feature
-    - title: 버그 수정 🐛
-      labels: bug
-    - title: 문서 📚
-      labels: docs
-    - title: 리팩토링 ♻️
-      labels: refactor
-    - title: 성능 개선 🚀
-      labels: performance
-    - title: 테스트 🧪
-      labels: test
-    - title: 빌드 시스템 📦
-      labels: build
     - title: 배포 주의 🛠
-      labels: deploy # deploy 라벨이 있는 이슈들을 모아서 배포 주의 카테고리로 만듭니다.
+      labels:
+        - deploy # deploy 라벨이 있는 이슈들을 모아서 배포 주의 카테고리로 만듭니다.
+    - title: 기능 추가 ✨
+      labels:
+        - feature
+    - title: 버그 수정 🐛
+      labels:
+        - bug
+    - title: 성능 개선 🚀
+      labels:
+        - performance
+    - title: 빌드 시스템 📦
+      labels:
+        - build
+    - title: 리팩토링 ♻️
+      labels:
+        - refactor
+    - title: 테스트 🧪
+      labels:
+        - test
+    - title: 문서 📚
+      labels:
+        - docs
     - title: 기타 변경사항 📄
-      labels: "*" # 모든 라벨이 붙지 않은 이슈들을 모아서 기타 변경사항 카테고리로 만듭니다.
+      labels:
+        - "*" # 모든 라벨
