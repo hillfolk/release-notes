@@ -1,5 +1,9 @@
 # .github/release.yml
+changelog:
   categories:
-    - title: Changes
+    - title: 주요 변경사항
       labels:
         - "*"
+    - title: 배포 주의
+      labels:
+        - deploy
