@@ -1,9 +1,9 @@
 # .github/release.yml
 changelog:
   categories:
-    - title: 주요 변경사항
+    - title: 배포 주의 🛠
       labels:
-        - "*"
-    - title: 배포 주의
+        - deploy # deploy 라벨이 있는 이슈들을 모아서 배포 주의 카테고리로 만듭니다.
+    - title: 주요 변경사항 📄
       labels:
-        - deploy
+        - "*" # 모든 라벨
