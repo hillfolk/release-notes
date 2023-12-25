@@ -1,7 +1,7 @@
 # .github/release.yml
 changelog:
   categories:
-    - title: 배포 주의 🛠
+    - title: 배포 주의 PR 🛠
       labels:
         - deploy # deploy 라벨이 있는 이슈들을 모아서 배포 주의 카테고리로 만듭니다.
     - title: 기능 추가 ✨
