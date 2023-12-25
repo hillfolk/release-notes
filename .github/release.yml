@@ -3,27 +3,35 @@ changelog:
   categories:
     - title: 기능 추가 ✨
       labels:
+        - Semver-Major
         - feature
     - title: 버그 수정 🐛
       labels:
+        - Semver-Major
         - bug
     - title: 문서 📚
       labels:
+        - Semver-Major
         - docs
     - title: 리팩토링 ♻️
       labels:
+        - Semver-Major
         - refactor
     - title: 성능 개선 🚀
       labels:
+        - Semver-Major
         - performance
     - title: 테스트 🧪
       labels:
+        - Semver-Major
         - test
     - title: 빌드 시스템 📦
       labels:
+        - Semver-Major
         - build
     - title: 배포 주의 🛠
       labels:
+        - Semver-Major
         - deploy # deploy 라벨이 있는 이슈들을 모아서 배포 주의 카테고리로 만듭니다.
     - title: 기타 변경사항 📄
       labels:
